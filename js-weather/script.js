@@ -3,7 +3,7 @@ const des = document.getElementById("weather");
 const API_KEY = "4b5774e9f3d2a07b84f0f2f88e486224";
 const btn = document.getElementById("btn");
 
-const sampleAsyncFunc = async () => {
+const fetchWeather = async () => {
   const city = area.value;
   const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
   const weather = await res.json();
